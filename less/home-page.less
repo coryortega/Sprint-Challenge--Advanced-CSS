@@ -1,6 +1,5 @@
 // Home Content
-
-@phone: 500px;
+@phone: ~"(max-width: 500px)";
 
 .home {
 
@@ -63,7 +62,7 @@
         width: 100%;
 
         .btn {
-          .custom-btn();
+          .custom-btn(white, #221D6E);
          
         }
         .btn:hover{
@@ -87,7 +86,7 @@
   }
 }// home
 
-@media only screen and (max-width: @phone){
+@media @phone {
 
   body {
     .displayflex();

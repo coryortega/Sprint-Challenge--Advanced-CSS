@@ -198,7 +198,7 @@ p {
 .img-header img {
   width: 800px;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .mainheader {
     display: flex;
     justify-content: center;
@@ -313,7 +313,7 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   body {
     display: flex;
     flex-direction: column;
