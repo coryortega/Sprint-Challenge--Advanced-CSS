@@ -5,11 +5,11 @@
     margin-top: 1%;
 
     header {
-        display: flex;
+        .displayflex();
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-        width: 800px;
+        width: 100%;
 
         .spacewalkers {
             margin: 2%;
@@ -18,8 +18,8 @@
 
         .nav {
             display: flex;
-            width:50%;
-            justify-content: space-around;
+            width: 25%;
+            justify-content: space-between;
             
         }
 
@@ -35,7 +35,7 @@
 }
 
 .img-header {
-    display: flex;
+    .displayflex();
     justify-content: center;
     align-items: center;
     margin-left: 23%;
@@ -44,4 +44,48 @@
         img {
             width: 800px;
         }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .mainheader {
+        .displayflex();
+        justify-content: center;
+        margin-top: 1%;
+
+        .header {
+            .displayflex();
+            justify-content: center;
+            width: 100%
+        }
+
+        .header .nav {
+            .displayflex();
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-around;
+            margin: 2%;
+            margin-bottom: 3%;
+        
+        }
+
+        .nav a {
+            .displayflex();
+        }
+
+    }
+ 
+    .img-header {
+        .displayflex();
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+    }
 }

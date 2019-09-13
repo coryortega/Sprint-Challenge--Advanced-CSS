@@ -170,7 +170,7 @@ p {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 800px;
+  width: 100%;
 }
 .mainheader header .spacewalkers {
   margin: 2%;
@@ -178,8 +178,8 @@ p {
 }
 .mainheader header .nav {
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  width: 25%;
+  justify-content: space-between;
 }
 .mainheader header nav a {
   text-decoration: none;
@@ -198,6 +198,42 @@ p {
 .img-header img {
   width: 800px;
 }
+@media only screen and (max-width: 500px) {
+  .mainheader {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .mainheader .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .mainheader .header .nav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    margin: 2%;
+    margin-bottom: 3%;
+  }
+  .mainheader .nav a {
+    display: flex;
+  }
+  .img-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .img-header img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -207,6 +243,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -250,6 +287,23 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn-main {
+  display: flex;
+  width: 100%;
+}
+.home .walk .walk-text .btn-main .btn {
+  display: inline;
+  color: white;
+  background-color: #221D6E;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 2%;
+}
+.home .walk .walk-text .btn-main .btn:hover {
+  color: #221D6E;
+  background-color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -259,8 +313,60 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   body {
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .home .space-images img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+  }
+  .home .blast {
+    width: 100%;
+  }
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: none;
+    padding: 0 0;
+  }
+  .home .walk .btn-main {
+    display: flex;
+    justify-content: center;
+  }
+  .home .walk .btn-main .btn {
+    display: inline;
+    color: white;
+    background-color: #221D6E;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+  }
+  .home .walk .btn-main .btn:hover {
+    color: #221D6E;
+    background-color: white;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .walk-text p {
+    margin: 2%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    padding: 3%;
   }
 }
